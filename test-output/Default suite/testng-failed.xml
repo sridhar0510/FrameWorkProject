@@ -3,7 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="org.test.TestNg"/>
+      <class name="org.test.Parametres"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="org.test.Parametres">
+        <methods>
+          <include name="tc1"/>
+        </methods>
+      </class> <!-- org.test.Parametres -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
